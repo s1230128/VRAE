@@ -1,0 +1,21 @@
+param:
+    n_epoch     : 50
+    size_batch  : 10
+    size_embed  : 300
+    size_hidden : 150
+    n_hidden    : 2
+
+in:
+    max_words : 10
+
+    n_train   : 500
+    train_enc : '../data/shakespeare.txt'
+    train_dec : '../data/shakespeare.txt'
+
+    n_test    : 100
+    test_enc  : '../data/shakespeare.txt'
+    test_dec  : '../data/shakespeare.txt'
+
+out:
+    save_dir : '../result/lstm_shakespeare'
+    save_interval : 5
